@@ -22,19 +22,21 @@ class FlatListItem extends Component {
               </TouchableOpacity>
             </View>
             <View style={Styles.ratingContainer}>
-              <Rating
-              type = "star"
-              imageSize = {20}
-              ratingColor ='#607D8B'
-              readonly
-              startingValue = {this.props.item.rating}
-              style={{ paddingVertical: 10 }}/>
+              <TouchableOpacity>
+                <Rating
+                type = "star"
+                imageSize = {20}
+                ratingColor ='#607D8B'
+                readonly
+                startingValue = {this.props.item.rating}
+                style={{ paddingVertical: 10 }}/>
+              </TouchableOpacity>
             </View>
           </View>
-  
+
           <Image 
-            source={{uri: this.props.item.imageUrl}}
-            style={Styles.imageFeed}
+              source={{uri: this.props.item.imageUrl}}
+              style={Styles.imageFeed}
           />
   
           <TouchableOpacity> 
