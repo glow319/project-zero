@@ -10,12 +10,15 @@
   "dependencies": {
     "@expo/samples": "2.1.1",
     "expo": "^25.0.0",
+    "prop-types": "15.6.1",
     "react": "16.2.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-25.0.0.tar.gz",
     "react-native-elements": "^1.0.0-beta2",
     "react-native-super-grid": "^2.0.2",
     "react-navigation": "^1.0.0-beta.27",
-    "prop-types": "15.6.1"
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
+    "redux-actions": "^2.3.0"
   },
   "devDependencies": {
     "jest-expo": "^25.0.0"

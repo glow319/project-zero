@@ -1,0 +1,7 @@
+const showDetails = () => {
+  type: "OPEN_DETAILS"
+};
+
+const closeDetails = () => {
+  type: "CLOSE_DETAILS"
+};
