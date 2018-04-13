@@ -9,14 +9,10 @@ export default class NewsFeed extends Component {
   render () {
     return (
       <View style={Styles.newsFeedContainer}>
-        <FlatList 
+        <FlatList
           data={flatListData}
-          renderItem = {({item, index}) => {
-            return(
-            <FlatListItem item={item} index={index}>
-            </FlatListItem>);  
-          }}>
-        </FlatList>
+          renderItem = {({item, index}) => <FlatListItem item={item} index={index}/>}
+        />
       </View>
     )
   }

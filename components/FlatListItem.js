@@ -1,23 +1,24 @@
-import React, { Component } from 'react';
-import { Platform, FlatList, StyleSheet, Text, View, Image, TouchableHighlight, TouchableOpacity} from 'react-native';
-import flatListData from './data/FlatListData.js';
-import {Ionicons}  from '@expo/vector-icons';
-import Colors from '../constants/Colors.js';
+import React, {Component} from 'react';
+import {Image, Text, TouchableOpacity, View} from 'react-native';
+import {Ionicons} from '@expo/vector-icons';
 import {Rating} from 'react-native-elements';
 import Styles from '../constants/Styles.js'
+import PropTypes from 'prop-types';
 
 class FlatListItem extends Component {
     render (){
+      const {item} = this.props;
+
       return (
         <View style= {Styles.listItemContainer}>
           <View style={Styles.photoHeader}>
             <View style= {Styles.mealTitleContainer}>
               <TouchableOpacity>
-                <Text style={Styles.mealName}>{this.props.item.mealName}</Text>
+                <Text style={Styles.mealName}>{item.mealName}</Text>
               </TouchableOpacity>
               <TouchableOpacity>
                 <Text style={Styles.restaurantInfo}>
-                  {this.props.item.restaurantName}, {this.props.item.city}, {this.props.item.distance}
+                  {item.restaurantName}, {item.city}, {item.distance}
                 </Text>
               </TouchableOpacity>
             </View>
@@ -28,14 +29,14 @@ class FlatListItem extends Component {
                 imageSize = {20}
                 ratingColor ='#607D8B'
                 readonly
-                startingValue = {this.props.item.rating}
+                startingValue = {item.rating}
                 style={{ paddingVertical: 10 }}/>
               </TouchableOpacity>
             </View>
           </View>
 
           <Image 
-              source={{uri: this.props.item.imageUrl}}
+              source={{uri: item.imageUrl}}
               style={Styles.imageFeed}
           />
   
@@ -43,7 +44,7 @@ class FlatListItem extends Component {
             <View style={Styles.photoFooter}>
                 <Ionicons name='ios-heart' size={18} color='black'/>
                 <View style={Styles.likeTextContainer}>
-                  <Text style={Styles.likeText}>{this.props.item.likes} Likes</Text>
+                  <Text style={Styles.likeText}>{item.likes} Likes</Text>
                 </View>
             </View>
           </TouchableOpacity>        
@@ -53,3 +54,8 @@ class FlatListItem extends Component {
   }
 
 export default FlatListItem;
+
+FlatListItem.propTypes = {
+  index: PropTypes.number,
+  item: PropTypes.object
+};
