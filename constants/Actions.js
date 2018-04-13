@@ -1,0 +1,6 @@
+export const actions = {
+  NEWSFEED: {
+    OPEN_DETAILS: 'NEWS_FEED__OPEN_DETAILS',
+    CLOSE_DETAILS: 'NEWS_FEED__CLOSE_DETAILS'
+  }
+};

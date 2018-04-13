@@ -1,9 +1,10 @@
 import {combineReducers} from 'redux'
 import {handleActions} from 'redux-actions'
+import {actions} from '../constants/Actions';
 
 const showDetails = handleActions({
   "CLOSE_DETAILS": () => false,
-  "OPEN_DETAILS": () => true
+  [actions.NEWSFEED.OPEN_DETAILS]: () => true
 }, false);
 
 const newsFeed = combineReducers({showDetails});
