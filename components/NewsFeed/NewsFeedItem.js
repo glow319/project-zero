@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import {Image, View} from 'react-native';
-import Styles from '../constants/Styles.js'
+import Styles from '../../constants/Styles.js'
 import PropTypes from 'prop-types';
-import NewsFeedItemHeader from './NewsFeed/NewsFeedItemHeader';
-import NewsFeedItemFooter from './NewsFeed/NewsFeedItemFooter';
+import NewsFeedItemHeader from './NewsFeedItemHeader';
+import NewsFeedItemFooter from './NewsFeedItemFooter';
 
 class FlatListItem extends Component {
     render (){
