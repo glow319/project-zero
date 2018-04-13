@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {FlatList, View} from 'react-native';
-import flatListData from './data/FlatListData.js';
-import FlatListItem from './FlatListItem.js';
+import newsFeedData from './data/newsFeedData.js';
+import NewsFeedItem from './NewsFeedItem.js';
 import Styles from '../constants/Styles.js';
 
 
@@ -10,8 +10,8 @@ export default class NewsFeed extends Component {
     return (
       <View style={Styles.newsFeedContainer}>
         <FlatList
-          data={flatListData}
-          renderItem = {({item, index}) => <FlatListItem item={item} index={index}/>}
+          data={newsFeedData}
+          renderItem = {({item, index}) => <NewsFeedItem item={item} index={index}/>}
         />
       </View>
     )

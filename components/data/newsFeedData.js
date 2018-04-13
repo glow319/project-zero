@@ -1,4 +1,4 @@
-const flatListData = [
+const newsFeedData = [
     {   
         'key': 1,
         'mealName': 'Cheeseburger',
@@ -41,4 +41,4 @@ const flatListData = [
     },
 ];
 
-module.exports = flatListData;
+module.exports = newsFeedData;
