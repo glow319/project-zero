@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Text, TouchableOpacity, View} from 'react-native';
 import {Rating} from 'react-native-elements';
-import Styles from '../../constants/Styles.js'
+import Styles from '../../../constants/Styles.js'
 import PropTypes from 'prop-types';
 
 class NewsFeedItemHeader extends Component {

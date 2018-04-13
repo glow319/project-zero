@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {FlatList, View} from 'react-native';
 import newsFeedData from '../data/newsFeedData.js';
-import NewsFeedItem from './NewsFeedItem.js';
+import NewsFeedItem from './NewsFeedItem/NewsFeedItem.js';
 import Styles from '../../constants/Styles.js';
 import PropTypes from 'prop-types';
 import {mapStateToNewsFeedProps} from './mapStateToNewsFeedProps'

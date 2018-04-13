@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Image, View} from 'react-native';
-import Styles from '../../constants/Styles.js'
+import Styles from '../../../constants/Styles.js'
 import PropTypes from 'prop-types';
 import NewsFeedItemHeader from './NewsFeedItemHeader';
 import NewsFeedItemFooter from './NewsFeedItemFooter';

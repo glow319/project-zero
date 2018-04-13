@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Text, TouchableOpacity, View} from 'react-native';
 import {Ionicons} from '@expo/vector-icons';
-import Styles from '../../constants/Styles.js'
+import Styles from '../../../constants/Styles.js'
 import PropTypes from 'prop-types';
 
 class NewsFeedItemFooter extends Component {
